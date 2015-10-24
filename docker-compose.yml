@@ -1,5 +1,5 @@
 data:
-  #image: 'pokorny/test:latest'
+  #image: 'pokorny/petrpokorny.cz'
   build: '.'
   command: 'tail -f /dev/null'
 
