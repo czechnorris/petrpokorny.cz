@@ -1,5 +1,6 @@
 data:
-  build: '.'
+  image: 'pokorny/petrpokorny.cz'
+  command: 'tail -f /dev/null'
 
 phpfpm:
   image: 'php:7-fpm'
@@ -9,7 +10,7 @@ phpfpm:
 nginx:
   image: 'nginx:latest'
   ports:
-    - '8080:80'
+    - '80'
   volumes_from:
     - data
   links:
