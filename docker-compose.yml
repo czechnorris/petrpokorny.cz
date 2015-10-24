@@ -1,0 +1,18 @@
+data:
+  #image: 'pokorny/test:latest'
+  build: '.'
+  command: 'tail -f /dev/null'
+
+phpfpm:
+  image: 'php:7-fpm'
+  volumes_from:
+    - data
+
+nginx:
+  image: 'nginx:latest'
+  ports:
+    - '8080:80'
+  volumes_from:
+    - data
+  links:
+    - phpfpm
