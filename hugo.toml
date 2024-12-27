@@ -1,0 +1,42 @@
+[module]
+[[module.imports]]
+path = 'github.com/LordMathis/hugo-theme-nightfall'
+
+[params]
+user = "petr"
+hostname = "petrpokorny.cz"
+
+[params.author]
+name = "Petr Pokorný"
+email = "petr@petrpokorny.cz"
+
+[[params.social]]
+key = 0
+name = "github"
+url = "https://github.com/czechnorris"
+icon = "bi bi-github"  # Add link to your icon font to `layouts/partials/custom-head.html`
+target = "_blank" # Defines your target option in a-href. _blank for a new Tab for example.
+aria = "GitHub Profile" # Define the aria label for accessibility like page reader - this is better for your SEO
+
+[[params.social]]
+key = 1
+name = "twitter"
+url = "https://x.com/sysel"
+icon = "bi bi-twitter"
+target = "_blank"
+aria = "Twitter/X Profile"
+
+[[params.social]]
+key = 2
+name = "linekdin"
+url = "https://www.linkedin.com/in/petr-pokorny"
+icon = "bi bi-linkedin"
+target = "_blank"
+aria = "LinkedIn Profile"
+
+[[params.social]]
+key = 3
+name = "email"
+url = "mailto:petr@petrpokorny.cz"
+icon = "bi bi-envelope"
+aria = "E-Mail"
